@@ -1,0 +1,634 @@
+<div class="h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
+            Featured Resources
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                <img src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg"
+                    alt="Headless UI" class="w-full h-64 object-cover">
+                <div class="p-4 md:p-6">
+                    <h3 class="text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-2">Headless UI</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 two-lines">
+                        Completely unstyled, fully accessible UI
+                        components,
+                        designed to integrate beautifully with Tailwind CSS.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full">Learn
+                        More</a>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                <img src="https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg"
+                    alt="Heroicons" class="w-full h-64 object-cover">
+                <div class="p-4 md:p-6">
+                    <h3 class="text-xl font-semibold text-purple-500 dark:text-purple-300 mb-2">Heroicons</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 two-lines">A set of 450+ free MIT-licensed SVG icons.
+                        Available
+                        as basic SVG icons and via first-party React and Vue libraries.</p>
+                    <a href="#"
+                        class="inline-block bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full">Learn
+                        More</a>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                <img src="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg"
+                    alt="Hero Patterns" class="w-full h-64 object-cover">
+                <div class="p-4 md:p-6">
+                    <h3 class="text-xl font-semibold text-cyan-500 dark:text-cyan-300 mb-2">Hero Patterns</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 two-lines">A collection of over 100 free MIT-licensed
+                        high-quality
+                        SVG patterns for you to use in your web projects.</p>
+                    <a href="#"
+                        class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full">Learn
+                        More</a>
+                </div>
+            </div>
+
+            <!-- Add more items as needed, following the same structure -->
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="branding">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-1.jpg"
+                    alt="Graphics Design"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-1.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >Graphics Design</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="research">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-2.jpg"
+                    alt="Web Development"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-2.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >Web Development</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="marketing">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-3.jpg"
+                    alt="App Development"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-3.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >App Development</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="planning">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-4.jpg"
+                    alt="Digital Marketing"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-4.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >Digital Marketing</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="branding">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-5.jpg"
+                    alt="SEO Services"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-5.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >SEO Services</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="marketing">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio-6.jpg"
+                    alt="Product Design"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/portfolio/portfolio-6.jpg"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >Product Design</a
+                    >
+                  </h4>
+                  <p>
+                    Short description for the ones who look for something new.
+                    Awesome!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+
+            <!-- eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+
+
+
+
+            <!-- Pricing section
+      <section id="pricing" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">
+              Pricing
+            </h6>
+            <h2 class="mb-6">Pricing & Plans</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered alteration in some form.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div
+                class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg"
+              >
+                <div>
+                  <h6
+                    class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title"
+                  >
+                    Starter
+                  </h6>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste, similique ea.
+                  </p>
+                  <div class="pt-8">
+                    <h2
+                      class="font-semibold inline-block relative pl-4 text-[55px]"
+                    >
+                      <span
+                        class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5"
+                        >$</span
+                      >0<span
+                        class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal"
+                        >/mo</span
+                      >
+                    </h2>
+                  </div>
+                </div>
+                <div class="pt-8 pb-10">
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block font-medium px-6 py-3 rounded-md bg-primary/10 text-primary hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                    >Start Free Trial</a
+                  >
+                </div>
+                <div>
+                  <ul>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Cras justo odio.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Dapibus ac facilisis in.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-body-light-11 dark:text-body-dark-11 text-base leading-[24px]"
+                      ></i>
+                      <span>Morbi leo risus.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-body-light-11 dark:text-body-dark-11 text-base leading-[24px]"
+                      ></i>
+                      <span>Excepteur sint occaecat velit.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div
+                class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-lg"
+              >
+                <div>
+                  <h6
+                    class="inline-block font-medium text-base mb-6 text-primary-color bg-primary rounded-md py-2 px-8 pricing-title"
+                  >
+                    Exclusive
+                  </h6>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste, similique ea.
+                  </p>
+                  <div class="pt-8">
+                    <h2
+                      class="font-semibold inline-block relative pl-4 text-[55px]"
+                    >
+                      <span
+                        class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5"
+                        >$</span
+                      >99<span
+                        class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal"
+                        >/mo</span
+                      >
+                    </h2>
+                  </div>
+                </div>
+                <div class="pt-8 pb-10">
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block font-medium px-6 py-3 rounded-md bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 hover:text-primary-color focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 focus:text-primary-color"
+                    >Purchase Now</a
+                  >
+                </div>
+                <div>
+                  <ul>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Cras justo odio.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Dapibus ac facilisis in.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Morbi leo risus.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-body-light-11 dark:text-body-dark-11 text-base leading-[24px]"
+                      ></i>
+                      <span>Excepteur sint occaecat velit.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div
+                class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg"
+              >
+                <div>
+                  <h6
+                    class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title"
+                  >
+                    Premium
+                  </h6>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste, similique ea.
+                  </p>
+                  <div class="pt-8">
+                    <h2
+                      class="font-semibold inline-block relative pl-4 text-[55px]"
+                    >
+                      <span
+                        class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5"
+                        >$</span
+                      >150<span
+                        class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal"
+                        >/mo</span
+                      >
+                    </h2>
+                  </div>
+                </div>
+                <div class="pt-8 pb-10">
+                  <a
+                    href="javascript:void(0)"
+                    class="inline-block font-medium px-6 py-3 rounded-md bg-primary/10 text-primary hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                    >Purchase Now</a
+                  >
+                </div>
+                <div>
+                  <ul>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Cras justo odio.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Dapibus ac facilisis in.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Morbi leo risus.</span>
+                    </li>
+                    <li
+                      class="text-left relative mb-3 inline-flex gap-3 w-full"
+                    >
+                      <i
+                        class="lni lni-checkmark-circle text-primary text-base leading-[24px]"
+                      ></i>
+                      <span>Excepteur sint occaecat velit.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+
