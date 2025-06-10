@@ -21,4 +21,15 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          900: '#1d222e', // لون أزرق غامق
+          800: '#1d222e'  // لون حدود أزرق غامق
+        }
+      }
+    }
+  }
 };

@@ -1,3 +1,4 @@
+// import './css/input.css'; // Dosya yolunu kendi yapına göre ayarla
 "use strict";
 
 // Page loading
@@ -43,16 +44,25 @@ window.addEventListener("scroll", function () {
 });
 
 // Web theme
-const webTheme = document.querySelector("[data-web-trigger=web-theme]"),
-  html = document.querySelector("html");
+const webTheme = document.querySelector("[data-web-trigger=web-theme]");
+const html = document.querySelector("html");
 
 window.addEventListener("load", function () {
   var theme = localStorage.getItem("Inazuma_WebTheme");
 
   if (theme == "light") {
     webTheme.innerHTML = '<i class="lni lni-sun"></i>';
+    document.querySelectorAll('.portfolio article > div').forEach(card => {
+      card.classList.remove('card-dark');
+      card.classList.add('card-light');
+    });
+    
   } else if (theme == "dark") {
     webTheme.innerHTML = '<i class="lni lni-night"></i>';
+    document.querySelectorAll('.portfolio article > div').forEach(card => {
+      card.classList.add('card-dark');
+      card.classList.remove('card-light');
+    });
   } else {
     theme = "light";
     localStorage.setItem("Inazuma_WebTheme", theme);
@@ -69,10 +79,22 @@ webTheme.addEventListener("click", function () {
     theme == "dark"
       ? '<i class="lni lni-sun"></i>'
       : '<i class="lni lni-night"></i>';
+
   theme = theme == "dark" ? "light" : "dark";
   localStorage.setItem("Inazuma_WebTheme", theme);
   html.dataset.webTheme = theme;
+
+  document.querySelectorAll('.portfolio article > div').forEach(card => {
+    if (theme === "dark") {
+      card.classList.add('card-dark');
+      card.classList.remove('card-light');
+    } else {
+      card.classList.remove('card-dark');
+      card.classList.add('card-light');
+    }
+  });
 });
+
 
 // Scrollspy
 function scrollspy(event) {
