@@ -179,12 +179,11 @@
                   </svg>
                 </a>
               </div>
-              <div class="flex w-full items-center justify-between px-5 relative">
+              <div class="flex w-full items-center justify-between px-5 ">
                 <div>
                   <button
                     type="button"
-                    class="ic-navbar-toggler absolute top-1/2 right-4 -translate-y-1/2 block rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
-                    data-web-toggle="navbar-collapse"
+                    class="ic-navbar-toggler absolute right-4 top-1/4 block rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"                    data-web-toggle="navbar-collapse"
                     data-web-target="navbarMenu"
                     aria-expanded="false"
                     aria-label="Toggle navigation menu"
@@ -206,7 +205,7 @@
                           href="#home"
                           class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                           role="menuitem"
-                          >Ana Sayfa</a
+                          >Anasayfa</a
                         >
                       </li>
 
@@ -234,7 +233,7 @@
                           role="menuitem"
                           class="dropdown-toggle ic-page-scroll mx-8 gap-2 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                         >
-                          <span>Tasarımlarımız</span>
+                          <span>Tasarımlar</span>
                             <i class="bi bi-chevron-down transition-transform duration-300 "></i>
                         </a>
                           
@@ -269,14 +268,46 @@
                           </ul>
 
                       </li>
-
-                      <li class="group relative">
+                      <li class="relative group dropdown">
                         <a
                           href="#applications"
-                          class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                           role="menuitem"
-                          >Uygulamalarımız</a
+                          class="dropdown-toggle ic-page-scroll mx-8 gap-2 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                         >
+                          <span>Uygulamalar</span>
+                            <i class="bi bi-chevron-down transition-transform duration-300 "></i>
+                        </a>
+                          
+                        <!-- Dropdown Menu -->
+                        <ul 
+                            class="dropdown-menu absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg opacity-0 scale-95 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto z-50"
+                          >
+                            <li>
+                              <a
+                                href="/ModülerStandlar.html"
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                              >Modüler Standlar</a>
+                            </li>
+                            <li>
+                              <a
+                                href="/AhşapStandlar.html"
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                              >Ahşap Standlar</a>
+                            </li>
+                            <li>
+                              <a
+                                href="/MaximaStandlar.html"
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                              >Maxima Standlar</a>
+                            </li>
+                            <li>
+                              <a
+                                href="#dijital"
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                              >Kongre Standlar</a>
+                            </li>
+                          </ul>
+
                       </li>
 
 
@@ -285,7 +316,7 @@
                           href="#team"
                           class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                           role="menuitem"
-                          >Ekip</a
+                          >Uzmanlar</a
                         >
                       </li>
 
@@ -308,12 +339,20 @@
                     data-web-trigger="web-theme"
                   ></button>
                   <div class="hidden sm:flex">
-                    <a
+                    <!-- <a
                       href="javascript:void(0)"
-                      class="btn-navbar ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20 text-base font-medium text-primary-color hover:bg-opacity-100 hover:text-primary"
+                      class="btn-navbar ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20  font-medium text-primary-color hover:bg-opacity-100 hover:text-primary"
                       role="button"
-                      >start</a
+                      >Get Started</a
+                    > -->
+                    <a
+                      href="tel:+121212"
+                      class="btn-navbar flex items-center gap-2 rounded-lg bg-primary-color bg-opacity-20 ml-5 px-6 py-3  text-base font-medium text-primary-color transition duration-300 hover:bg-primary-color/90"
+                      role="menuitem"
                     >
+                      <i class="lni lni-phone text-lg"></i>
+                      +1 212 121 212
+                    </a>
                   </div>
                 </div>
               </div>
@@ -674,34 +713,41 @@
         <div class="container">
           <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
             <h6 class="mb-2 block text-lg font-semibold text-primary">
-              Tanıtım Videosu
+               Tanıtım Videomuz
             </h6>
-            <h2 class="mb-6">
-              <strong>Firma</strong> tanıtım videomuzu izleyin
-            </h2>
-            <p>
-              Fuarlarda markanızı güçlü temsil edecek özel stand çözümleri
-              sunuyoruz.
-            </p>
+           <h2 class="mb-6">Hizmetlerimizi Yakından Tanıyın</h2>
+          <p>
+            Tanıtım videomuzu izleyerek projelerimizi ve çalışma sürecimizi daha yakından keşfedin.
+          </p>
           </div>
 
-           <div class="scroll-revealed relative max-w-[900px] mx-auto">
+          <div class="scroll-revealed relative max-w-[900px] mx-auto">
+            <!-- Video Thumbnail -->
             <img
               src="./assets/img/intro-video.jpg"
               alt="Intro video"
-              class="w-full h-full aspect-video rounded-xl object-cover"
+              class="w-full h-auto rounded-xl object-cover aspect-video"
             />
-            <a
-              href="javascript:void(0)"
-              class="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center bg-primary text-primary-color text-[1.875rem] absolute top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/3 shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl focus:bg-primary-color focus:text-primary focus:shadow-xl"
-            >
-              <i class="lni lni-play"></i>
-            </a>
+
+            <!-- Centered Play Button -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <a
+                href="javascript:void(0)"
+                class="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center 
+                      bg-primary text-primary-color text-[1.875rem] 
+                      shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl 
+                      focus:bg-primary-color focus:text-primary focus:shadow-xl
+                      transition-all duration-300 transform hover:scale-105"
+              >
+                <i class="lni lni-play"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Designs section -->
+
+      <!-- Designs section  Tasarımlarımız-->
       <section id="designs" class="section-area">
         <div class="container">
           <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
@@ -717,11 +763,11 @@
 
           <div class="scroll-revealed portfolio-grid row">
               <!-- 1 - Ahşap Fuar Standı -->
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="branding">
-                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden dark:bg-gray-800 dark:border-gray-800 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img src="./assets/img/portfolio/portfolio-2.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src="./image_folder/Tasarımlarımız foto/sax.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
                   </div>
                   <div class="px-6 pb-6 pt-3">
@@ -729,7 +775,7 @@
                       <a href="/AhşapStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400 transition-colors">Ahşap Fuar Standı</a>
                     </h4>
                     <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 ">Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.</p>
-                    <a href="/AhşapStandlar.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                    <a href="/AhşapStandlar.html" class="inline-flex items-center  gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
                       Standı İncele
                       <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -741,11 +787,11 @@
             </div>
             <!-- 2 - Modüler Fuar Standı -->
             
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="branding">
-                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden dark:bg-gray-800 dark:border-gray-800 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden dark:border-gray-800 transition-transform duration-300 hover:scale-[1.02]">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img src="./assets/img/portfolio/portfolio-2.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src="./image_folder/Tasarımlarımız foto/two.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
                   </div>
                   <div class="px-6 pb-6 pt-3">
@@ -753,7 +799,7 @@
                       <a href="/ModülerStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400 transition-colors">Modüler Fuar Standı</a>
                     </h4>
                     <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 ">Ekonomik ve pratik çözüm sunan modüler sistem. Farklı fuarlarda kolayca kullanılır.</p>
-                    <a href="/ModülerStandlar.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                    <a href="/ModülerStandlar.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
                       Standı İncele
                       <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -765,11 +811,11 @@
             </div>
 
             <!-- 3 - Maxima Fuar Standı -->
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
               <article class="group" data-filter="branding">
-                <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden dark:bg-gray-800 dark:border-gray-700 transition-transform duration-300 hover:scale-[1.02]">
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden  dark:border-gray-700 transition-transform duration-300 hover:scale-[1.02]">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img src="./assets/img/portfolio/portfolio-3.jpg" alt="Maxima Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src="./image_folder/Tasarımlarımız foto/three.jpg" alt="Maxima Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
                   </div>
                   <div class="px-6 pb-6 pt-3">
@@ -777,7 +823,7 @@
                       <a href="/MaximaStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400 transition-colors">Maxima Fuar Standı</a>
                     </h4>
                     <p class="text-sm text-gray-700 dark:text-gray-400 mb-4">Premium tasarım, LED aydınlatma ve etkileşimli ekranlarla zenginleştirilmiş fuar deneyimi.</p>
-                    <a href="/MaximaStandlar.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                    <a href="/MaximaStandlar.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
                       Standı İncele
                       <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -789,11 +835,11 @@
             </div>
 
             <!-- 4 - Kongre Fuar Standı -->
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
               <article class="group" data-filter="branding">
-                <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden dark:bg-gray-800 dark:border-gray-700 transition-transform duration-300 hover:scale-[1.02]">
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden  dark:border-gray-700 transition-transform duration-300 hover:scale-[1.02]">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img src="./assets/img/portfolio/portfolio-4.jpg" alt="Kongre Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src="./image_folder/Tasarımlarımız foto/fif.jpg" alt="Kongre Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
                   </div>
                   <div class="px-6 pb-6 pt-3">
@@ -801,8 +847,482 @@
                       <a href="/  .html" class="hover:text-blue-700 dark:hover:text-blue-400 transition-colors">Kongre Fuar Standı</a>
                     </h4>
                     <p class="text-sm text-gray-700 dark:text-gray-400 mb-4">Seminer ve kongreler için tasarlanmış, toplantı ve sunum alanlarıyla bütünleşik yapı.</p>
-                    <a href="/moduler.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                    <a href="/moduler.html" class="inline-flex items-center gap-2 text-white hover:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
                       Standı İncele
+                      <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+      
+      <!-- Designs section -->
+      
+         <!-- <section id="applications" class="section-area">
+          <div class="container">
+            <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+              <h6 class="mb-2 block text-lg font-semibold text-primary">
+                Uygulamalarımız
+              </h6>
+              <h2 class="mb-6">Our Recent Works</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available but
+                the majority have suffered alteration in some form.
+              </p>
+            </div>
+
+            <nav
+              class="scroll-revealed portfolio-menu mb-[3.750rem] text-center"
+              aria-label="Portfolio filter"
+            >
+              <button
+                type="button"
+                class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color active"
+                data-filter="all"
+              >
+                All Work
+              </button>
+              <button
+                type="button"
+                class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                data-filter="branding"
+              >
+                Branding
+              </button>
+              <button
+                type="button"
+                class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                data-filter="marketing"
+              >
+                Marketing
+              </button>
+              <button
+                type="button"
+                class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                data-filter="planning"
+              >
+                Planning
+              </button>
+              <button
+                type="button"
+                class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                data-filter="research"
+              >
+                Research
+              </button>
+            </nav>
+
+            <div class="scroll-revealed portfolio-grid row">
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="branding">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-1.jpg"
+                      alt="Graphics Design"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-1.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >Graphics Design</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="research">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-2.jpg"
+                      alt="Web Development"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-2.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >Web Development</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="marketing">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-3.jpg"
+                      alt="App Development"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-3.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >App Development</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="planning">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-4.jpg"
+                      alt="Digital Marketing"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-4.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >Digital Marketing</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="branding">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-5.jpg"
+                      alt="SEO Services"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-5.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >SEO Services</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="portfolio col-12 sm:col-6 lg:col-4">
+                <article class="group" data-filter="marketing">
+                  <div
+                    class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                  >
+                    <img
+                      src="./assets/img/portfolio/portfolio-6.jpg"
+                      alt="Product Design"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                    >
+                      <div class="flex flex-wrap gap-2 p-4">
+                        <div class="inline-block relative">
+                          <a
+                            href="./assets/img/portfolio/portfolio-6.jpg"
+                            class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-zoom-in"></i>
+                          </a>
+                        </div>
+                        <div class="portfolio-icon">
+                          <a
+                            href="javascript:void(0)"
+                            class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                          >
+                            <i class="lni lni-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <h4 class="mb-2">
+                      <a
+                        href="javascript:void(0)"
+                        class="text-[1.5rem] leading-tight text-inherit"
+                        >Product Design</a
+                      >
+                    </h4>
+                    <p>
+                      Short description for the ones who look for something new.
+                      Awesome!
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      <section id="applications" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">
+              Uygulamalarımız
+            </h6>
+            <h2 class="mb-6">Fuar Alanı Uygulamalarımız</h2>
+            <p>
+              Kurulumdan montaja, tüm teknik uygulamalarda hızlı ve sorunsuz çözümler sunuyoruz.
+            </p>
+
+          </div>
+
+
+          <div class="scroll-revealed portfolio-grid row">
+              <!-- 1 - Ahşap Fuar Standı -->
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="./image_folder/Tasarımlarımız foto/Tasarımlarımız Ahşap Fuar Standı.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
+                  </div>
+                  <div class="px-6 pb-6 pt-3 text-center">
+                    <h4 class="text-xl text-center font-semibold text-gray-900 dark:text-white mb-2">
+                      <a href="/AhşapStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400  transition-colors">Ahşap Fuar Standı</a>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 text-center">Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.</p>
+                    <a href="/AhşapStandlar.html" class="inline-flex items-center  gap-2 text-white hover:text-whitebg-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-6 py-2 rounded-full transition-colors dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                      Standı İncele
+                      
+                      <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- 2 - Modüler Fuar Standı -->
+            
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class="bg-white border border-gray-400 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="./image_folder/Tasarımlarımız foto/Tasarımlarımız Ahşap Fuar Standı.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
+                  </div>
+                  <div class="px-6 pb-6 pt-3 text-center">
+                    <h4 class="text-xl text-center font-semibold text-gray-900 dark:text-white mb-2">
+                      <a href="/AhşapStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400  transition-colors">Ahşap Fuar Standı</a>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 text-center">Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.</p>
+                    <a href="/AhşapStandlar.html" class="inline-flex items-center  gap-2 text-white hover:text-whitebg-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-6 py-2 rounded-full transition-colors dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                      Standı İncele
+                      
+                      <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- 3 - Maxima Fuar Standı -->
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class=" border border-gray-400 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="./image_folder/Tasarımlarımız foto/Tasarımlarımız Ahşap Fuar Standı.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
+                  </div>
+                  <div class="px-6 pb-6 pt-3 text-center">
+                    <h4 class="text-xl text-center font-semibold text-gray-900 dark:text-white mb-2">
+                      <a href="/AhşapStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400  transition-colors">Ahşap Fuar Standı</a>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 text-center">Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.</p>
+                    <a href="/AhşapStandlar.html" class="inline-flex items-center  gap-2 text-white hover:text-whitebg-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-6 py-2 rounded-full transition-colors dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                      Standı İncele
+                      
+                      <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- 4 - Kongre Fuar Standı -->
+            <div class="portfolio col-12 sm:col-6 lg:col-3">
+              <article class="group" >
+                <div class=" border border-gray-400 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="./image_folder/Tasarımlarımız foto/Tasarımlarımız Ahşap Fuar Standı.jpg" alt="Modüler Fuar Standı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
+                  </div>
+                  <div class="px-6 pb-6 pt-3 text-center">
+                    <h4 class="text-xl text-center font-semibold text-gray-900 dark:text-white mb-2">
+                      <a href="/AhşapStandlar.html" class="hover:text-blue-700 dark:hover:text-blue-400  transition-colors">Ahşap Fuar Standı</a>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 text-center">Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.</p>
+                    <a href="/AhşapStandlar.html" class="inline-flex items-center  gap-2 text-white hover:text-whitebg-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-6 py-2 rounded-full transition-colors dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+                      Standı İncele
+                      
                       <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                       </svg>
@@ -815,362 +1335,9 @@
 
         </div>
       </section>
-      
-      <!-- Designs section -->
-      <section id="applications" class="section-area">
-        <div class="container">
-          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
-            <h6 class="mb-2 block text-lg font-semibold text-primary">
-              Uygulamalarımız
-            </h6>
-            <h2 class="mb-6">Our Recent Works</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in some form.
-            </p>
-          </div>
-
-          <nav
-            class="scroll-revealed portfolio-menu mb-[3.750rem] text-center"
-            aria-label="Portfolio filter"
-          >
-            <button
-              type="button"
-              class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color active"
-              data-filter="all"
-            >
-              All Work
-            </button>
-            <button
-              type="button"
-              class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
-              data-filter="branding"
-            >
-              Branding
-            </button>
-            <button
-              type="button"
-              class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
-              data-filter="marketing"
-            >
-              Marketing
-            </button>
-            <button
-              type="button"
-              class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
-              data-filter="planning"
-            >
-              Planning
-            </button>
-            <button
-              type="button"
-              class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
-              data-filter="research"
-            >
-              Research
-            </button>
-          </nav>
-
-          <div class="scroll-revealed portfolio-grid row">
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="branding">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-1.jpg"
-                    alt="Graphics Design"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-1.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >Graphics Design</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="research">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-2.jpg"
-                    alt="Web Development"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-2.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >Web Development</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="marketing">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-3.jpg"
-                    alt="App Development"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-3.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >App Development</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="planning">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-4.jpg"
-                    alt="Digital Marketing"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-4.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >Digital Marketing</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="branding">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-5.jpg"
-                    alt="SEO Services"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-5.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >SEO Services</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="portfolio col-12 sm:col-6 lg:col-4">
-              <article class="group" data-filter="marketing">
-                <div
-                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
-                >
-                  <img
-                    src="./assets/img/portfolio/portfolio-6.jpg"
-                    alt="Product Design"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
-                  >
-                    <div class="flex flex-wrap gap-2 p-4">
-                      <div class="inline-block relative">
-                        <a
-                          href="./assets/img/portfolio/portfolio-6.jpg"
-                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-zoom-in"></i>
-                        </a>
-                      </div>
-                      <div class="portfolio-icon">
-                        <a
-                          href="javascript:void(0)"
-                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
-                        >
-                          <i class="lni lni-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h4 class="mb-2">
-                    <a
-                      href="javascript:void(0)"
-                      class="text-[1.5rem] leading-tight text-inherit"
-                      >Product Design</a
-                    >
-                  </h4>
-                  <p>
-                    Short description for the ones who look for something new.
-                    Awesome!
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Call action section -->
-      <section
+      <!-- <section
         id="call-action"
         class="section-area !bg-primary !text-primary-color"
        >
@@ -1193,7 +1360,7 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section -->
       <section id="team" class="section-area">
@@ -2472,7 +2639,7 @@
       </section>
 
       <!-- Blog section -->
-      <section id="blog" class="section-area">
+      <!-- <section id="blog" class="section-area">
         <div class="container">
           <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
             <h6 class="mb-2 block text-lg font-semibold text-primary">Blog</h6>
@@ -2584,7 +2751,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Clients section -->
       <section id="clients" class="section-area">

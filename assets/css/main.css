@@ -84,6 +84,8 @@ body {
   display: inline-block;
 }
 
+
+
 /* Toggle Link */
 .dropdown-toggle {
   display: flex;
@@ -699,6 +701,7 @@ h1:where([data-web-theme=dark], [data-web-theme=dark] *),
   color: rgb(238 238 240 / var(--tw-text-opacity));
 
 }
+
 /* page_one.index code */
 
         .page-btn {

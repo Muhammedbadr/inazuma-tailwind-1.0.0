@@ -906,3 +906,30 @@
         </div>
       </div>
     </header>
+
+
+
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+  <!-- Başlık -->
+  <div class="px-6 pt-6">
+    <h3 class="text-center text-gray-700 font-semibold text-sm tracking-wide">TASARIMLARIMIZ</h3>
+  </div>
+
+  <!-- Görsel -->
+  <div class="p-4">
+    <img src="/assets/img/portfolio/portfolio-2.jpg" alt="Ahşap Fuar Standı" class="rounded-xl w-full h-48 object-cover">
+  </div>
+
+  <!-- İçerik -->
+  <div class="px-6 pb-6 text-center">
+    <h4 class="text-xl font-bold text-gray-900 mb-2">Ahşap Fuar Standı</h4>
+    <p class="text-sm text-gray-600 mb-4">
+      Doğal ahşap malzemelerle oluşturulan şık ve sıcak bir tasarım. %100 özelleştirilebilir.
+    </p>
+
+    <!-- Buton -->
+    <a href="/AhşapStandlar.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-full transition-colors">
+      Standı İncele
+    </a>
+  </div>
+</div>
