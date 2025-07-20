@@ -56,12 +56,20 @@ window.addEventListener("load", function () {
       card.classList.remove('card-dark');
       card.classList.add('card-light');
     });
+    document.querySelectorAll('.portfolio_tow article > div').forEach(card => {
+      card.classList.remove('card-dark_2');
+      card.classList.add('card-light_2');
+    });
     
   } else if (theme == "dark") {
     webTheme.innerHTML = '<i class="lni lni-night"></i>';
     document.querySelectorAll('.portfolio article > div').forEach(card => {
       card.classList.add('card-dark');
       card.classList.remove('card-light');
+    });
+    document.querySelectorAll('.portfolio_tow article > div').forEach(card => {
+      card.classList.add('card-dark_2');
+      card.classList.remove('card-light_2');
     });
   } else {
     theme = "light";
@@ -91,6 +99,15 @@ webTheme.addEventListener("click", function () {
     } else {
       card.classList.remove('card-dark');
       card.classList.add('card-light');
+    }
+  });
+  document.querySelectorAll('.portfolio_tow article > div').forEach(card => {
+    if (theme === "dark") {
+      card.classList.add('card-dark_2');
+      card.classList.remove('card-light_2');
+    } else {
+      card.classList.remove('card-dark_2');
+      card.classList.add('card-light_2');
     }
   });
 });
@@ -131,22 +148,36 @@ const pageLink = document.querySelectorAll(".ic-page-scroll");
 
 pageLink.forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const targetElement = document.querySelector(link.getAttribute("href"));
+    const href = link.getAttribute("href");
+    // Eğer href aynı sayfa içi bağlantı (# ile başlıyorsa)
+    if (href.startsWith("#")) {
+      e.preventDefault(); // normal link davranışını engelle
+      const targetElement = document.querySelector(href);
 
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        offsetTop: 1 - 74,
-      });
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+
+      // Menü açıksa kapat
+      navbar.classList.remove("menu-show");
+      navbarToggler.innerHTML = navbar.classList.contains("menu-show")
+        ? '<i class="lni lni-close"></i>'
+        : '<i class="lni lni-menu"></i>';
+    } else {
+      // Eğer href başka sayfaya yönlendiriyorsa, normal yönlendirme yapılsın
+      // Menü açıksa kapat (opsiyonel)
+      navbar.classList.remove("menu-show");
+      navbarToggler.innerHTML = navbar.classList.contains("menu-show")
+        ? '<i class="lni lni-close"></i>'
+        : '<i class="lni lni-menu"></i>';
+      // e.preventDefault() yok, sayfa normal yüklenir
     }
-
-    navbar.classList.remove("menu-show");
-    navbarToggler.innerHTML = navbar.classList.contains("menu-show")
-      ? '<i class="lni lni-close"></i>'
-      : '<i class="lni lni-menu"></i>';
   });
 });
+
 
 // Tabs
 const tabs = document.querySelectorAll(".tabs");
