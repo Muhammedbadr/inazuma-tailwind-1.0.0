@@ -300,3 +300,35 @@ if (st) {
     });
   });
 }
+
+// thanks page <script>
+  const form = document.querySelector("form");
+  const popup = document.getElementById("successPopup");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // Sayfa yenilenmesin
+
+    const formData = new FormData(form);
+    const endpoint = "https://formspree.io/f/mrbllekw"; // kendi formspree adresin
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        popup.classList.remove("hidden"); // Başarı popup’ını göster
+        form.reset(); // Formu sıfırla
+      } else {
+        alert("Gönderim başarısız. Lütfen tekrar deneyin.");
+      }
+    } catch (error) {
+      alert("Hata oluştu: " + error.message);
+    }
+  });
+
+  function closePopup() {
+    popup.classList.add("hidden");
+  }

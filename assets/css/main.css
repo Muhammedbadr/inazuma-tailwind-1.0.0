@@ -1029,6 +1029,84 @@ p + p{
     max-width: 1536px;
   }
 }
+/* thanks page  */
+  @keyframes fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+/* Arka karartı */
+.overlay-background {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Popup kart */
+.popup-card {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  animation: fade-in 0.3s ease-out;
+}
+
+.check-icon {
+  font-size: 3rem;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.popup-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.popup-text {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+/* Buton: bg-green-600 hover:bg-green-700 ... */
+.custom-btn {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-btn:hover {
+  background-color: #15803d;
+}
+
+/* Animasyon */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 
 .disabled,
   :disabled{
